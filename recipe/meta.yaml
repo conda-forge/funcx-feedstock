@@ -27,6 +27,7 @@ requirements:
     - texttable >=1.6.4,<2
     - websockets ==9.1
     - six
+    - packaging
 
 test:
   imports:
