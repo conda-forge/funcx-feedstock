@@ -1,5 +1,5 @@
 {% set name = "funcx" %}
-{% set version = "0.3.9" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/funcx-{{ version }}.tar.gz
-  sha256: 00cddf880b73dcb0cefb7c09c174bc5938e9d2204b1ef95117b6b814e953cb76
+  sha256: 11031070644a87dea02bbd0eb5299260da5212cc4e3b4cb3cf68f69e57828131
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -19,14 +19,17 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - dill ==0.3.4
+    - dill ==0.3.5.1
     - fair-research-login ==0.2.6
     - globus-sdk >=3,<4
     - python >=3.6
     - requests >=2.20.0
     - texttable >=1.6.4,<2
-    - websockets ==9.1
+    - websockets ==10.3
     - six
+    - packaging
+    - funcx-common
+    - tblib
 
 test:
   imports:
