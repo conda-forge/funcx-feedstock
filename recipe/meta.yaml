@@ -19,16 +19,17 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - dill ==0.3.4
+    - dill ==0.3.5.1
     - fair-research-login ==0.2.6
     - globus-sdk >=3,<4
     - python >=3.6
     - requests >=2.20.0
     - texttable >=1.6.4,<2
-    - websockets ==9.1
+    - websockets ==10.3
     - six
     - packaging
     - funcx-common
+    - tblib
 
 test:
   imports:
