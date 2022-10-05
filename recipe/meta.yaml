@@ -1,5 +1,5 @@
 {% set name = "funcx" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/funcx-{{ version }}.tar.gz
-  sha256: 6c47e0091bf2ecce416a410a46748da5cdcbc29903cca6d998ece0e3100f004a
+  sha256: 24ed26caaa89a3ca08038d67d65abc05547364e4fa04ecf90f2368b10a55cce1
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
