@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -19,16 +19,16 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - dill ==0.3.5.1
-    - fair-research-login ==0.2.6
+    - dill =0.3.5.1
+    - fair-research-login =0.2.6
     - globus-sdk >=3,<4
     - python >=3.6
     - requests >=2.20.0
     - texttable >=1.6.4,<2
-    - websockets ==10.3
+    - websockets =10.3
     - six
     - packaging
-    - funcx-common
+    - funcx-common =0.0.15
     - tblib
 
 test:
