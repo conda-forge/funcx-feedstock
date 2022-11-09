@@ -30,6 +30,7 @@ requirements:
     - packaging
     - funcx-common =0.0.15
     - tblib
+    - pika
 
 test:
   imports:
