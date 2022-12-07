@@ -28,7 +28,7 @@ requirements:
     - websockets =10.3
     - six
     - packaging
-    - funcx-common =0.0.18
+    - funcx-common =0.0.20
     - tblib
     - pika
 
