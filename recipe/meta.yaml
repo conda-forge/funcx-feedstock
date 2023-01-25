@@ -1,5 +1,5 @@
 {% set name = "funcx" %}
-{% set version = "1.0.6" %}
+{% set version = "1.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/funcx-{{ version }}.tar.gz
-  sha256: fc35bda8686cfeb697a4c2977af28437c616476d40cbb3dcf607585ccafac016
+  sha256: 54dbf8a9a71260d6ce63f6a760620578fcc89709401adf91756e5d87e1f8cbff
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -28,7 +28,7 @@ requirements:
     - websockets =10.3
     - six
     - packaging
-    - funcx-common =0.0.20
+    - funcx-common =0.0.23
     - tblib
     - pika
 
