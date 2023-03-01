@@ -1,11 +1,11 @@
-About funcx
-===========
+About funcx-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/funcx-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/funcx-faas/funcx
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/funcx-feedstock/blob/main/LICENSE.txt)
 
 Summary: funcX: High Performance Function Serving for Science
 
