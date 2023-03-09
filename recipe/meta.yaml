@@ -11,26 +11,25 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - dill =0.3.5.1
-    - fair-research-login =0.2.6
-    - globus-sdk >=3,<4
-    - python >=3.6
-    - requests >=2.20.0
-    - texttable >=1.6.4,<2
-    - websockets =10.3
-    - six
-    - packaging
     - funcx-common =0.0.24
-    - tblib
-    - pika
+    - globus-sdk >=3.14.0,<4
+    - packaging >=21.1
+    - pika >=1.2
+    - python >=3.7
+    - requests >=2.20.0
+    - tblib =1.7.0
+    - texttable >=1.6.7
+    - typing_extensions >=4.0
+    - websockets =10.3
 
 test:
   imports:
