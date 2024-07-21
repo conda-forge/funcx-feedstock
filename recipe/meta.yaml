@@ -20,7 +20,7 @@ requirements:
     - python >=3.7
   run:
     - python >=3.7
-    - globus-compute-sdk =2.1.0
+    - globus-compute-sdk =2.4.0
 
 test:
   imports:
