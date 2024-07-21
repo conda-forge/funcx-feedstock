@@ -1,5 +1,5 @@
 {% set name = "funcx" %}
-{% set version = "2.1.0" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/funcx-{{ version }}.tar.gz
-  sha256: a8ee06def2a3606cdf1a80ddb6b37a01c0ffa2b3b60416c110f87b124447ce77
+  sha256: 2665de484f7d3f76474241de8ebf8bcf10a429a0cf4ddf9bbffcd9815e5175fd
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -20,7 +20,7 @@ requirements:
     - python >=3.7
   run:
     - python >=3.7
-    - globus-compute-sdk =2.1.0
+    - globus-compute-sdk =2.4.0
 
 test:
   imports:
