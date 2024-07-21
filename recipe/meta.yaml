@@ -19,17 +19,8 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - dill =0.3.5.1
-    - funcx-common =0.0.25
-    - globus-sdk >=3.14.0,<4
-    - packaging >=21.1
-    - pika >=1.2
     - python >=3.7
-    - requests >=2.20.0
-    - tblib =1.7.0
-    - texttable >=1.6.7
-    - typing_extensions >=4.0
-    - websockets =10.3
+    - globus-compute-sdk >=2.0.1
 
 test:
   imports:
