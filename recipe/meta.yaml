@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - python >={{ python_min }}
     - globus-compute-sdk =2.1.0
