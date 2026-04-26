@@ -1,0 +1,50 @@
+schema_version: 1
+
+context:
+  name: funcx
+  version: 2.1.0
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/funcx-${{ version }}.tar.gz
+  sha256: a8ee06def2a3606cdf1a80ddb6b37a01c0ffa2b3b60416c110f87b124447ce77
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - globus-compute-sdk =2.1.0
+
+tests:
+  - python:
+      imports:
+        - funcx
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - pip
+        - python ${{ python_min }}.*
+    script:
+      - pip check
+
+about:
+  summary: "funcX: High Performance Function Serving for Science"
+  license: Apache-2.0
+  license_file: LICENSE
+  homepage: https://github.com/funcx-faas/funcx
+
+extra:
+  recipe-maintainers:
+    - WardLT
+    - jan-janssen
